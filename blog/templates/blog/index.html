@@ -10,6 +10,7 @@
     <ul class="list-group">
         {% for post in posts %}
             <li class="list-group-item">
+                <div class="pull-right">{{post.published_date|date:"m.d.Y"}}</div>
                 <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
             </li>
         {% endfor %}

@@ -6,7 +6,12 @@
 {% endblock title %}
 
 {% block content %}
-    <h2>{{ post.title }}</h2>
+    <h2>
+        {{ post.title }}
+        <small>
+            published {{post.published_date|timesince}} ago
+        </small>
+    </h2>
     <pre>
 {{ post.content }}
     </pre>
