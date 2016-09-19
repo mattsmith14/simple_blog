@@ -1,5 +1,10 @@
 {% extends "blog/base.html" %}
 
+{% block title %}
+    {{ block.super }}
+    - Home
+{% endblock title %}
+
 {% block content %}
     Hello World
 {% endblock content %}
