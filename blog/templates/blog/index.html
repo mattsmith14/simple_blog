@@ -10,7 +10,7 @@
     <ul class="list-group">
         {% for post in posts %}
             <li class="list-group-item">
-                {{ post.title }}
+                <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
             </li>
         {% endfor %}
     </ul>
